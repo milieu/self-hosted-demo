@@ -24,7 +24,7 @@ function BreadcrumbsItem({ match }) {
       >{title || 'Page Not Found'}</Interactive>
       {!match.isExact && title && ' / '}
       {title &&
-        <Route path={`${match.url === '/' ? '' : match.url}/:path`} component={BreadcrumbsItem} />
+        <Route path={`/self-hosted-demo/${match.url === '/' ? '' : match.url}/:path`} component={BreadcrumbsItem} />
       }
     </span>
   );
