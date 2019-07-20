@@ -2,6 +2,7 @@ import React from 'react';
 import Interactive from 'react-interactive';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
+import TodoMvcWrapper from './todomvc/index';
 import ExampleComponent from './ExampleComponent';
 import PageNotFound from './PageNotFound';
 import Breadcrumbs from './Breadcrumbs';
@@ -16,7 +17,7 @@ export default function App() {
         href="https://github.com/rafrex/spa-github-pages"
         style={s.repoLink}
         {...s.link}
-      >https://github.com/rafrex/spa-github-pages</Interactive>
+      >Original credits go to https://github.com/rafrex/spa-github-pages</Interactive>
 
       <nav style={s.breadcrumbs}>
         <Breadcrumbs />
@@ -25,6 +26,7 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/example" component={ExampleComponent} />
+        <Route path="/contact-backend-server" component={TodoMvcWrapper} />
         <Route component={PageNotFound} />
       </Switch>
 
@@ -39,6 +41,7 @@ export default function App() {
         >
           Code and concept by <span {...s.childLink}>Rafael Pedicini</span>
         </Interactive>
+          (with some additions from Meredith)
       </div>
     </div>
   );
