@@ -26,9 +26,9 @@ export default function App() {
       </nav>
 
       <Switch>
-        <Route exact path=`/${REPO_NAME}/` component={Home} />
-        <Route path=`/${REPO_NAME}/example` component={ExampleComponent} />
-        <Route path=`/self-hosted-demo/contact-backend-server` component={TodoMvcWrapper} />
+        <Route exact path=`/` component={Home} />
+        <Route path=`/example` component={ExampleComponent} />
+        <Route path=`/contact-backend-server` component={TodoMvcWrapper} />
         <Route component={PageNotFound} />
       </Switch>
 
