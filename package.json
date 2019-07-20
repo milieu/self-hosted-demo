@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/rafrex/spa-github-pages.git"
   },
-  "author": "Rafael Pedicini <code@rafrex.com>",
+  "author": "Meredith Leu modifying Rafael Pedicini <code@rafrex.com>'s code",
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.6.0",
